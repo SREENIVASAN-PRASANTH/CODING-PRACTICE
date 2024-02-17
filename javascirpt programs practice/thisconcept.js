@@ -72,3 +72,32 @@ let car5 = {
 }
 
 car5.start();
+
+//arrow function inside call function using findIndex method
+
+let cars = ["Tata","Maruti","Tesla"];
+
+let car6 = {
+    color : "blue",
+    brand : "Tata",
+    start : function(){
+        let audiIndex = cars.findIndex(
+            (car) => console.log(this)
+        );
+    }
+}
+
+car6.start();
+
+//In constructor this refers to instance object
+
+function Car(color, brand){
+    this.color = color;
+    this.brand = brand;
+    this.start = function(){
+        console.log(this);
+    }
+}
+
+let car7 = new Car("Red","Maruti");
+car7.start();
