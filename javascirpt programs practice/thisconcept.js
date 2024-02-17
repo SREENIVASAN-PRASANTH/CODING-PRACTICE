@@ -101,3 +101,65 @@ function Car(color, brand){
 
 let car7 = new Car("Red","Maruti");
 car7.start();
+
+//Arrow function inherits this from the context in which the code is defined
+function Car1(color, brand){
+    this.color = color;
+    this.brand = brand;
+    this.start = () => {
+        console.log(this);
+    }
+}
+
+let car8 = new Car1("white","Tata");
+car8.start();
+
+//Mutable and Immutable values
+
+//primitive types are immutable for example numbers, boolean, string etc.
+//objects are mutable for example arrays, object, functions etc.
+
+let x = 5;
+let y = x;
+console.log(x);
+console.log(y);
+y = 10;
+console.log(y);
+
+//mutable
+let a = {value : 5};
+let b = a;
+b.value = 10; // here we are just updating the values
+console.log(a);
+console.log(b);
+
+let z = {value : 20};
+b = z;
+console.log(a);
+console.log(b); // here we are totally refering to a new object
+
+//variable declaration let example
+//initialize is not mandatory
+let v;
+v = 10;
+console.log(v);
+v = 15;
+console.log(v);
+
+//variable declaration const
+//initialization is mandatory
+const d = 12;
+console.log(d);
+
+//mutating the object property
+
+const Car12 = {
+    color : "blue",
+    brand : "Audi"
+};
+
+Car12.color = "Red"
+console.log(Car12);
+
+//we cant reassign a new object to the variable
+Car12 = {}; // this line will raise error
