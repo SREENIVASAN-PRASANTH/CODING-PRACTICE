@@ -18,5 +18,10 @@ public class string_to_integer {
         String str = sc.nextLine();
         int val = convertNumber(str);
         System.out.println("Number = " + val);
+
+        String str2 = "1234";
+        System.out.println("String2 = " + str2);
+        int val2 = Integer.valueOf(str2);
+        System.out.println("Number2 = " + val2);
     }
 }
