@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--The default size of image is called as Instrinsicc size-->
+    <!--The external sizing we give to the image is called as extrinsic size-->
+    <!--Ensure the aspect ratio and natural size of the image-->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Elements And Handling Overflow</title>
+    <style>
+        .paragraph{
+            border: 2px solid black;
+            font-size: 18px;
+            padding: 20px;
+            height: 100px;
+            width: 100px;
+            min-height: 10px;
+            max-height: 50px;
+            overflow: auto;
+        }
+
+        .h-overflow{
+            font-size: 48px;
+            width: 100px;
+            padding: 6px;
+            border: 2px solid black;
+            overflow-x: scroll;
+        }
+
+        .image-container{
+            border: 2px solid black;
+        }
+
+        .image{
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <!-- If we try to add more content than the specified size of border we may see the overlapping of one paragraph element on another-->
+    <!-- Handlinng overflow using overflow property overflow:visible; the css try to avoid data loss so it shows content-->
+    <!-- To avoid the overflow we will use hidden value -->
+    <!-- If we want to avoid the data loss we can use the scroll value -->
+    <!-- The scroll can used for x and y direction using overflow-x and overflow-y property -->
+    <p class="paragraph">We are learning to become a frontend developer . </p>
+    <p>Content outside paragraph</p>
+    <p class="h-overflow">Overflow</p>
+    <!-- Overflow property value can be auto. Because it automatically adds scroll bar in the required axis. -->
+    <!-- Min height and min width CSS properties can be used to give sizing of an element similarly for max-height and max-width -->
+    <div class="image-container">
+        <img src="https://imgs.search.brave.com/IA-a4lUg47kM0FW6vtr7Lz_eIaEWKTc1EHlAv1FFPVg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/YS1kcm9wLW9mLXBp/bmstYW5kLXllbGxv/dy1wYWludC1pbi13/YXRlci5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" class="image">
+    </div>
+</body>
+</html>
