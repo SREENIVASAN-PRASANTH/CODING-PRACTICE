@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box sizing</title>
+    <style>
+        .box{
+            height: 120px;
+            width: 120px;
+            background-color: rgb(182, 182, 230);
+            font-size: 20px;
+            font-family: Roboto;
+            margin: 5px;
+        }
+
+        .box2{
+            padding: 20px;
+        }
+
+        .box3{
+            padding: 10px;
+            border: 20px solid yellow;
+        }
+        *{
+            color: brown;
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Can we set the height and width including padding and border -->
+    <!-- Here comes the role of box-sizing property -->
+    <!-- The box sizing property sets how total width and height of an element is calculated. -->
+    <!-- box sizing by default content box is the value -->
+    <!-- if we want the padding and border included we will use border box as value -->
+    <!-- Today we are going to learn universal selector *{} which selects all HTML elements in the documents -->
+    <!-- Universal selector has the least specificity comapred to inline,class and tag selectors -->
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+</body>
+</html>
