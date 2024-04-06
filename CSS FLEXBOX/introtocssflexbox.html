@@ -11,12 +11,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Into to CSS FLEXBOX</title>
     <style>
-        .boxes-container{
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+          
+        /*.boxes-container{
             border: 5px solid black;
             display:flex;
-            flex-direction: row;
-            justify-content: end;
-            align-items: flex-end;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             height: 100vh;
         }
 
@@ -36,6 +38,42 @@
         }
         .box3{
             background-color: blueviolet;
+        }*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .bg-container{
+            background-image: url("https://imgs.search.brave.com/XHjHtjpt56cpoxdzS0CdVB-yVPuMdGYK7pFanI-3b1g/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvYWVzdGhldGlj/LW11c2ljLWJhY2tn/cm91bmQtZ2xxZDEz/Z2VlemJ5MjZwbS5q/cGc");
+            height: 100vh;
+            background-size: cover;
+            color: white;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .button{
+            height: 40px;
+            width: 100px;
+            border-radius: 30px;
+            border: 2px solid rgb(251, 247, 247);
+            background-color: rgb(253, 252, 253);
+            margin: 3px;
+        }
+        .outline-button{
+            height: 40px;
+            width: 100px;
+            border-radius: 30px;
+            border: 2px solid rgb(245, 240, 240);
+            background-color: transparent;
+            margin: 3px;
+            
         }
     </style>
 </head>
@@ -46,10 +84,22 @@
     <!-- The main axis is the direction given and cross direction is perpendicular to it. -->
     <!-- Justify content property used align flex items in main axis eg values:flex-start, center, flex-end, space-between, space-around -->
     <!-- By default align items value is stretch thats why the flex items stretches fully -->
-    <div class="boxes-container">
+    <!-- <div class="boxes-container">
         <div class="box box1">1</div>
         <div class="box box2">2</div>
         <div class="box box3">3</div>
+    </div>-->
+    <div class="bg-container">
+        <h1 class="heading">THE MUSIC WORLD</h1>
+        <p class="paragraph">Music is your own experience, your thoughts and your wisdom. If you don't live it, you're not listening to the right kind.</p>
+        <!-- Only direct child can be converted as flex items thats why we used a div element to get the buttons in same row -->
+        <div>
+            <button class="button">Get Started</button>
+            <button class="outline-button">Learn More</button>
+        </div>
+        
+
     </div>
+    
 </body>
 </html>
