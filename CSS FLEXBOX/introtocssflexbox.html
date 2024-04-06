@@ -1,0 +1,55 @@
+<!-- layout is pattern to structure the elements in website -->
+<!-- eg. facebook and youtube layout -->
+<!-- methods to design layout flexbox , css grid , since most of the web browsers doesn't support today we will learn flexbox-->
+<!-- FLEXBOX is a layouting method -->
+<!-- display property -->
+<!-- direct child to the container will only have flex properties -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Into to CSS FLEXBOX</title>
+    <style>
+        .boxes-container{
+            border: 5px solid black;
+            display:flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: flex-end;
+            height: 100vh;
+        }
+
+        .box{
+            color: rgb(19, 16, 16);
+            font-size: 30px;
+            padding: 10px;
+            text-align: center;
+            
+        }
+        .box1{
+            background-color: aqua;
+        }
+
+        .box2{
+            background-color: antiquewhite;
+        }
+        .box3{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!-- the flex items can be inline or block element -->
+    <!-- In flexbox there are two axis ,one is main axis and other is cross axis -->
+    <!-- To use this we have to use flex-direction property -->
+    <!-- The main axis is the direction given and cross direction is perpendicular to it. -->
+    <!-- Justify content property used align flex items in main axis eg values:flex-start, center, flex-end, space-between, space-around -->
+    <!-- By default align items value is stretch thats why the flex items stretches fully -->
+    <div class="boxes-container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+</body>
+</html>
