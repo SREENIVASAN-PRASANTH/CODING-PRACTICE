@@ -1,0 +1,79 @@
+<!-- Today we will learn flex-wrap property -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inro to flexbox2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .boxes-container{
+            height: 100vh;
+            border: 10px solid yellow;
+            display: flex;
+            flex-direction: column;
+            font-size: 30px;
+            flex-wrap: wrap;
+        }
+
+        .box1{
+            background-color: rgb(241, 205, 6);
+            padding: 40px;
+        }
+        .box2{
+            background-color: rgb(231, 32, 89);
+            padding: 40px;
+        }
+        .box3{
+            background-color: rgb(60, 155, 237);
+            padding: 40px;
+        }
+        .box4{
+            background-color: rgb(247, 240, 255);
+            padding: 40px;
+        }
+        .box5{
+            background-color: rgb(119, 169, 214);
+            padding: 40px;
+        }
+        .box6{
+            background-color: rgb(78, 26, 77);
+            padding: 40px;
+        }
+        .box7{
+            background-color: rgb(36, 159, 44);
+            padding: 40px;
+        }
+        .box8{
+            background-color: rgb(141, 197, 51);
+            padding: 40px;
+        }
+        .box9{
+            background-color: rgb(174, 95, 50);
+            padding: 40px;
+        }
+        .box10{
+            background-color: rgb(131, 157, 179);
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- To avoid overlap of the flex items with border we can use flex-wrap to align the items in the next row -->
+    <div class="boxes-container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+        <div class="box box9">9</div>
+        <div class="box box10">10</div>
+    </div>
+</body>
+</html>

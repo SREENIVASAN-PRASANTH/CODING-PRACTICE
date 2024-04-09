@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Shopping Section</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        *{
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .bg-container{
+            background-image: linear-gradient(to left,rgb(33, 219, 232),rgb(107, 224, 18));
+            height: 100vh;
+            color: black;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .heading{
+            color: rgb(18, 3, 3);
+            font-weight: bold;
+            padding-top: 100px;
+        }
+        .paragraph{
+            padding-bottom: 30px;
+        }
+        .card{
+            background-color: white;
+            width: 250px;
+            height: 400px;
+            padding: 20px;
+            border-radius: 30px;
+        }
+
+        .trending-message{
+            background-color: orange;
+            border-radius: 20px;
+            padding: 4px;
+            
+            
+        }
+
+        .image{
+            background-image: url('https://www.hdwallpapers.in/download/red_nike_shoe_in_black_background_4k_hd_nike-HD.jpg');
+            height: 200px;
+            background-position-x: center;
+            background-size: cover;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .card-heading{
+            font-weight: bold;
+        }
+
+        .price-tag{
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .font-bg{
+            background-color: orange;
+            padding: 15px;
+            width: fit-content;
+            border-radius: 100px;
+        }
+        i{
+            font-size: 25px;
+        }
+
+        .card-footer{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-container">
+        <h1 class="heading">The Best Running Shoes of 2021</h1>
+        <p class="paragraph">Running is the easiest exercise to practice. As the truism begins
+            all you need is a pair of shoes and a road to start.
+        </p>
+
+        <div class="card">
+            <div class="image">
+                <p class="trending-message">trending..</p>
+            </div>
+            <h3 class="card-heading">Nike football boot</h3>
+            <p class="card-paragraph">The Nike boot has a good stud and soft insole that makes you comfort while running.</p>
+            <div class="card-footer">
+                <p class="price-tag">$700.00</p>
+                <div class="font-bg">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/f839f783de.js" crossorigin="anonymous"></script>
+</body>
+</html>

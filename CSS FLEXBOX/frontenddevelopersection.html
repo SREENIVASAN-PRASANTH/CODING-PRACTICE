@@ -1,0 +1,95 @@
+<!-- In this code i am trying out how to use flex-wrap -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend developer section</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .bg-container{
+            background-color: aqua;
+            font-family: Roboto;
+            height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .heading{
+            color: rgb(16, 1, 1);
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .paragraph{
+            color: rgb(11, 1, 1);
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .card{
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            width: 150px;
+            padding-left: 40px;
+            margin: 10px;
+        }
+
+        .orange-margin{
+            border-left: 7px solid orange ;
+            
+        }
+
+        .cards-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-container">
+        
+            <h1 class="heading">Frontend Developer</h1>
+            <p class="paragraph">Frontend developers work closely with designers to make
+                the websites good looking, functional and fast. This learning
+                path includes.
+            </p>
+            <div class="cards-container">
+                <div class="card orange-margin">
+                    <p>Learn HTML</p>
+                </div>
+                <div class="card orange-margin">
+                    Learn CSS
+                </div>
+                <div class="card orange-margin">
+                    Learn JAVASCRIPT
+                </div>
+                <div class="card orange-margin">
+                    Learn SQL
+                </div>
+                <div class="card orange-margin">
+                    Learn BOOTSTRAP
+                </div>
+                <div class="card orange-margin">
+                    Learn REACT JS
+                </div>
+                <div class="card orange-margin">
+                    Learn NODE JS
+                </div>
+            </div>
+            
+        </div>
+    
+</body>
+</html>
