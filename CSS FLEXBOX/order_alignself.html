@@ -1,0 +1,101 @@
+<!-- today we will practice order and align self properties in CSS flexbox -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order align-self</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+
+        .bg-container{
+            border: 10px solid goldenrod;
+            font-size: 20px;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .box1{
+            background-color: blue;
+            padding: 30px;
+            order: 1;
+        }
+
+        .box2{
+            background-color: rgb(10, 131, 20);
+            padding: 30px;
+            order: 2;
+            
+        }
+
+        .box3{
+            background-color: rgb(8, 96, 130);
+            padding: 30px;
+            order: -1;
+            
+        }
+
+        .box4{
+            background-color: rgb(148, 77, 14);
+            padding: 30px;
+            order: -2;
+            
+        }
+        .box5{
+            background-color: rgb(176, 131, 92);
+            padding: 30px;
+            order: -2;
+            
+        }
+        .box6{
+            background-color: rgb(14, 41, 148);
+            padding: 30px;
+            order: -2;
+            
+        }
+        .box7{
+            background-color: rgb(14, 121, 148);
+            padding: 30px;
+            order: 7;
+            
+        }
+        .box8{
+            background-color: rgb(231, 143, 150);
+            padding: 30px;
+            
+            
+        }
+        .box9{
+            background-color: rgb(148, 41, 14);
+            padding: 30px;
+                   
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-container">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+        <div class="box7">7</div>
+        <div class="box8">8</div>
+        <div class="box9">9</div>
+<!-- if i want to change position of only one box means i have to use align-self property -->
+<!-- The align self property specifies at what postion the individual flex item should be placed. -->
+<!-- align-self value will be auto as default which will inherit the parent container align-items value -->
+<!-- now we will see how to change the order of flex-items. we will use order property which has values 0,+ve and -ve -->
+<!-- The default value of order is zero -->
+<!-- if same order number is given then it takes the order according to how we have given in html code -->
+    </div>
+</body>
+</html>
