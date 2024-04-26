@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS media queries</title>
+    <style>
+        .heading{
+            color: green;
+        }
+
+        @media print{
+            .heading{
+                color: red;
+            }
+        }
+/*
+        @media (min-width:800px){
+            .paragraph{
+                color: yellow;
+                font-size: 30px;
+                order: 1;
+            }
+
+            .heading{
+                font-size: 50px;
+                order: 2;
+            }
+
+            body{
+                background-color: aqua;
+                display: flex;
+                
+            }
+        }
+
+        @media (orientation:landscape){
+            body{
+                background-color: bisque;
+            }
+        }
+
+
+        @media (orientation:portrait){
+            body{
+                background-color: red;
+            }
+        }
+*/
+        @media screen and (orientation:landscape) and (min-width:100px){
+            body{
+                background-color:blueviolet !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Media queries are used to create a responsive layouts -->
+    <!-- Syntax of media types are
+    @media media-type and (media-feature){}
+example @media screen{}, @media printer{}, @media TV{} -->
+    <h1 class = "heading">Vel Tech High Tech</h1>
+    <p class="paragraph">The college is a good college for engineering students.</p>
+
+</body>
+</html>
