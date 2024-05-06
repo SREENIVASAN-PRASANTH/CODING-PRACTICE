@@ -16,12 +16,23 @@ if __name__ == "__main__":
     right = len(matrix[0])
     
     '''
+    
     consider a matrix
      --     --
      | 1 2 3 |
      | 4 5 6 |
      | 7 8 9 |
      --     --
+     
+    reduced subtraction
+    spiral matrix
+    sub array
+    frequency of a number in a array
+    transpose of a matrix
+    sum of odd index in an array
+    negative values in a array
+    negative values in a array
+     
      '''
     while (top < bottom and left < right):
         
