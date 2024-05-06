@@ -25,10 +25,7 @@ if __name__ == "__main__":
      --     --
      
     reduced subtraction
-    spiral matrix
-    sub array
-    frequency of a number in a array
-    transpose of a matrix
+    
     sum of odd index in an array
     negative values in a array
     negative values in a array
