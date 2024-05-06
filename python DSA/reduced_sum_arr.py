@@ -1,4 +1,6 @@
 N = [1,2,3,4]
+s = 0
+for i,a in enumerate(N):
+    s += a
 
-for i in range(len(N)):
-    
+print(s)
