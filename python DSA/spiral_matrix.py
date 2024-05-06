@@ -26,7 +26,6 @@ if __name__ == "__main__":
      
     reduced subtraction
     
-    sum of odd index in an array
     negative values in a array
     negative values in a array
      
